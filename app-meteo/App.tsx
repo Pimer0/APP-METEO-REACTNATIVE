@@ -14,7 +14,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import WeatherList from "./components/WeatherList";
 
-function HomeScreen({ navigation }) {
+function HomeScreen({ navigation }: { navigation: any }) {
 	const image: ImageSourcePropType = require("./assets/background-app-meteo.jpeg");
 
 	return (

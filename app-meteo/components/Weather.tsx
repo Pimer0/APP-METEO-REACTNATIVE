@@ -72,8 +72,10 @@ export interface address {
 }
 
 function Weather() {
-	const [location, setLocation] = useState(null);
-	const [errorMsg, setErrorMsg] = useState(null);
+	const [errorMsg, setErrorMsg] = useState<string | null>(null);
+	const [location, setLocation] = useState<Location.LocationObject | null>(
+		null
+	);
 	const [weather, setWeather] = useState<Meteo | null>(null);
 	const [ville, setVille] = useState<Ville | null>(null);
 	const [text, onChangeText] = React.useState("");
